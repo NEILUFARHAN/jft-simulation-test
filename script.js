@@ -204,6 +204,12 @@
     const showTestList = () => {
         clearMain();
         main.appendChild(createTestList(tests));
+        const howtodo = document.createElement("div");
+        howtodo.innerHTML= `
+        <h2 class="text-center my-1">How to use</h2>
+        <img src="./assets/images/howtouse.png" class="img-fluid" alt="Responsive image">
+        `;
+        main.appendChild(howtodo);
     }
 // test list
 
