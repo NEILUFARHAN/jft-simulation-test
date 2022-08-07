@@ -516,7 +516,7 @@
     const createTest = () => {
         // create container
         const testTestContainer = document.createElement("div");
-        testTestContainer.classList.add("test","mb-2","border")
+        testTestContainer.classList.add("test","mb-2")
         testTestContainer.appendChild(createTestHeader());
         testTestContainer.appendChild(document.createElement("hr"));
         testTestContainer.appendChild(createTestQAContainer());
