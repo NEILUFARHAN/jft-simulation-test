@@ -1,0 +1,36 @@
+/* Common */
+
+/* test list */
+.page{
+    transition: all 0.3s ease;
+}
+.test-card a{
+    min-height:130px;
+    transition:all 0.3s ease;
+    cursor: pointer;
+}
+.test-card a:hover{
+    background-color:  #e9ecef;
+    border-color: #198754 !important;
+}
+.test-card a .card-title{
+    transition:all 0.3s ease;
+}
+.test-card a:hover .card-title{
+    background-color: #198754  !important;
+    color: white;
+}
+
+
+/* test list */
+button .list-group-item {
+    transition: all 0.3s ease;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
