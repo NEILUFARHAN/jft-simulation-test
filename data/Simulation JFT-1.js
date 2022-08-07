@@ -53,7 +53,7 @@ const SimulationJFT1Questions = [
         section : 1,
         text : "昨日から＿＿＿＿＿＿で、電車が止まりました。 ",
         answers : [
-                    {id:0,text:"すごい雨。"},
+                    {id:0,text:"すごい雨"},
                     {id:1,text:"つかれました"},
                     {id:2,text:"おくれました"},
                     {id:3,text:"はれ"},
@@ -220,9 +220,9 @@ const SimulationJFT1Questions = [
         id : 16,
         section : 2,
         text : `
-        山田：その本とってもつてきですね。</br>
+        山田：その本とってもすてきですね。</br>
         リン：ええ、この本は私の国で作ったほんですよ。</br>
-        山田：へえ、つごいですね。＿＿＿＿＿＿＿。</br>
+        山田：へえ、すごいですね。＿＿＿＿＿＿＿。</br>
         リン：もちろん、いですよ。</br>
         <hr>
         ＿＿＿に入るものは何ですか。
