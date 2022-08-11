@@ -9,7 +9,7 @@
     let confirmationAnswer;
 
     const initApp = () => {
-        showTestList ();
+        showLoginForm ();
     }
     const resetApp = () => {
         if(confirm("Are you sure you want to exit ?")){
@@ -701,16 +701,46 @@
 // global
 
 // login control
-    const createLoginForm = () => {
-        
-    }
-    const showLoginForm = () => {
-        
-    }
-    const authenthication = () => {
-        
+
+const createLoginForm = () => {
+    const loginContainer = document.createElement('div');
+    loginContainer.innerHTML = `
+    <h1>Login</h1>
+    <div class="mx-auto p-3 m-2 shadow-sm border rounded" >
+        <div class="form-floating my-2">
+            <input type="username" id="username" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">username</label>
+          </div>
+          <div class="form-floating my-2">
+            <input type="password" id="password" class="form-control" id="floatingPassword" placeholder="">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="mx-auto text-center  my-2">
+            <button type="button"  
+            onclick="authenthication()" 
+            class="btn btn-outline-primary">Submit</button>
+          </div>
+    </div>
+    `;
+    return loginContainer;
+}
+const showLoginForm = () => {
+    clearMain();
+    main.appendChild(createLoginForm());
+}
+const authenthication = () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const obj = admin.find(user => (user.username == username) && (user.password == password));
+    console.log(obj);
+    if(!obj) {
+        username="";
+        password="";
+    }  else{
+        showTestList();
     }
 
+}
     initApp();
     window.onbeforeunload = function() {
         return "your data will not be saved, aru you sure you want to leave?";

@@ -17,64 +17,49 @@
       </nav>
     </header>
     <main class="mx-auto px-5 mb-3 " style="max-width: 1200px;">
-        <h1>Answer</h1>
-        <div class="border rounded m-3 p-3 shadow">
-            <div class="list-group" id="test-answer-key">
 
-            </div>
-        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="../data/Simulation JFT-1.js"></script>
     <script type="text/javascript" src="../data/Simulation JFT-2.js"></script>
     <script type="text/javascript" src="../data/jft-main-db.js"></script>
+    <script type="text/javascript" src="../data/admin.js"></script>
     <script>
-    const generateTestAnswer = () => {
-        tests[0].questions.forEach(question => {
-        let soundElement='';
-        let imageElement='';
-        if(question.sound!= ""){
-            soundElement=`
-            <div class="text-center">
-            <audio preload="none" controls onplaying="disabledAudio(this)" onended="enabledAudio(this)"  id="2" > 
-                <source src="../assets/sounds/${question.sound}" type="audio/ogg">
-                <source src="../assets/sounds/${question.sound}" type="audio/mpeg">
-                No audio support.
-            </audio><p>Careful!, you can only play this audio for 2 times</p>
-            </div>
-            `;
-
-        }
-        if(question.image  != ""){
-            imageElement=`
-            <div class="text-center">
-            <img class="mx-auto img-fluid"src="../assets/images/${question.image}" style="max-height:200px"/>
-            </div>
-            `;
-        }
-            let listElement = document.createElement("div");
-            listElement.innerHTML = `
-            <div class="list-group-item">
-                <p>section ${question.section} question ${question.id}</p>
-                <div class="row bg-light bg-gradient border shadow-sm  text-start p-2 mb-2">
-                    ${soundElement}
-                    <hr>
-                    ${question.text}
-                    <hr>
-                    ${imageElement}
-                </div>
-                </br>
-                <button id="s${question.section}q${question.id}" 
-                type="button" class="list-group-item list-group-item-action bg-success bg-opacity-75 text-white rounded "  disabled>${question.answers[question.keyid].text}
-                </button>
-
-                
-            </div>
-            `; 
-            document.getElementById("test-answer-key").appendChild(listElement);
-        });
-    };
-      generateTestAnswer();
+    const createLoginForm = () => {
+        const loginContainer = document.createElement('div');
+        loginContainer.innerHTML = `
+        <h1>Login</h1>
+        <div class="mx-auto p-3 m-2 shadow-sm border rounded" >
+            <div class="form-floating my-2">
+                <input type="username" id="username" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">username</label>
+              </div>
+              <div class="form-floating my-2">
+                <input type="password" id="password" class="form-control" id="floatingPassword" placeholder="">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="mx-auto text-center  my-2">
+                <button type="button"  
+                onclick="authenthication()" 
+                class="btn btn-outline-primary">Submit</button>
+              </div>
+        </div>
+        `;
+        return loginContainer;
+    }
+    const main = document.querySelector("main");
+    const showLoginForm = () => {
+        // clearMain();
+        main.appendChild(createLoginForm());
+    }
+    const authenthication = () => {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const obj = admin.find(user => (user.username == username) && (user.password == password));
+        console.log(obj);
+        return obj;
+    }
+    showLoginForm();
     </script>
   </body>
 </html>
