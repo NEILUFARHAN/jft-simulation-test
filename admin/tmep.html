@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JFT-Simulation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-light shadow-sm mb-3 mx-auto">
+              <h1 class="text-center fw-bold p-1 text-success">Admin Page</h1>
+      </nav>
+    </header>
+    <main class="mx-auto px-5 mb-3 " style="max-width: 1200px;">
+        <h1>Answer</h1>
+        <div class="border rounded m-3 p-3 shadow">
+            <div class="list-group" id="test-answer-key">
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../data/Simulation JFT-1.js"></script>
+    <script type="text/javascript" src="../data/Simulation JFT-2.js"></script>
+    <script type="text/javascript" src="../data/jft-main-db.js"></script>
+    <script>
+    const generateTestAnswer = () => {
+        tests[0].questions.forEach(question => {
+        let soundElement='';
+        let imageElement='';
+        if(question.sound!= ""){
+            soundElement=`
+            <div class="text-center">
+            <audio preload="none" controls onplaying="disabledAudio(this)" onended="enabledAudio(this)"  id="2" > 
+                <source src="../assets/sounds/${question.sound}" type="audio/ogg">
+                <source src="../assets/sounds/${question.sound}" type="audio/mpeg">
+                No audio support.
+            </audio><p>Careful!, you can only play this audio for 2 times</p>
+            </div>
+            `;
+
+        }
+        if(question.image  != ""){
+            imageElement=`
+            <div class="text-center">
+            <img class="mx-auto img-fluid"src="../assets/images/${question.image}" style="max-height:200px"/>
+            </div>
+            `;
+        }
+            let listElement = document.createElement("div");
+            listElement.innerHTML = `
+            <div class="list-group-item">
+                <p>section ${question.section} question ${question.id}</p>
+                <div class="row bg-light bg-gradient border shadow-sm  text-start p-2 mb-2">
+                    ${soundElement}
+                    <hr>
+                    ${question.text}
+                    <hr>
+                    ${imageElement}
+                </div>
+                </br>
+                <button id="s${question.section}q${question.id}" 
+                type="button" class="list-group-item list-group-item-action bg-success bg-opacity-75 text-white rounded "  disabled>${question.answers[question.keyid].text}
+                </button>
+
+                
+            </div>
+            `; 
+            document.getElementById("test-answer-key").appendChild(listElement);
+        });
+    };
+      generateTestAnswer();
+    </script>
+  </body>
+</html>
