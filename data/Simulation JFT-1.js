@@ -17,7 +17,7 @@ const SimulationJFT1Questions = [
                     {id:3,text:"イチゴ"},
                     ],
         keyid : 1,
-        image : "1.png",
+        image : "Simulation JFT-1/1.png",
         sound : ""
     },
     {
@@ -31,7 +31,7 @@ const SimulationJFT1Questions = [
                     {id:3,text:"アルバイト"},
                     ],
         keyid : 2,
-        image : "2.png",
+        image : "Simulation JFT-1/2.png",
         sound : ""
     },
     {
@@ -45,7 +45,7 @@ const SimulationJFT1Questions = [
                     {id:3,text:"ききます"},
                     ],
         keyid : 1,
-        image : "3.png",
+        image : "Simulation JFT-1/3.png",
         sound : ""
     },
     {
@@ -540,8 +540,8 @@ const SimulationJFT1Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 3,
-        image : "31.png",
-        sound : "31.mp3"
+        image : "Simulation JFT-1/31.png",
+        sound : "Simulation JFT-1/31.mp3"
     },
     {
         id : 32,
@@ -554,8 +554,8 @@ const SimulationJFT1Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 1,
-        image : "32.png",
-        sound : "32.mp3"
+        image : "Simulation JFT-1/32.png",
+        sound : "Simulation JFT-1/32.mp3"
     },
     {
         id : 33,
@@ -569,7 +569,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 0,
         image : "",
-        sound : "33.mp3"
+        sound : "Simulation JFT-1/33.mp3"
     },
     {
         id : 34,
@@ -582,8 +582,8 @@ const SimulationJFT1Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 0,
-        image : "34.png",
-        sound : "34.mp3"
+        image : "Simulation JFT-1/34.png",
+        sound : "Simulation JFT-1/34.mp3"
     },
     {
         id : 35,
@@ -596,8 +596,8 @@ const SimulationJFT1Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 2,
-        image : "35.png",
-        sound : "35.mp3"
+        image : "Simulation JFT-1/35.png",
+        sound : "Simulation JFT-1/35.mp3"
     },
     {
         id : 36,
@@ -611,7 +611,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 0,
         image : "",
-        sound : "36.mp3"
+        sound : "Simulation JFT-1/36.mp3"
     },
     {
         id : 37,
@@ -625,7 +625,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 3,
         image : "",
-        sound : "37.mp3"
+        sound : "Simulation JFT-1/37.mp3"
     },
     {
         id : 38,
@@ -639,7 +639,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 2,
         image : "",
-        sound : "38.mp3"
+        sound : "Simulation JFT-1/38.mp3"
     },
     {
         id : 39,
@@ -653,7 +653,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 0,
         image : "",
-        sound : "39.mp3"
+        sound : "Simulation JFT-1/39.mp3"
     },
     {
         id : 40,
@@ -667,7 +667,7 @@ const SimulationJFT1Questions = [
                     ],
         keyid : 3,
         image : "",
-        sound : "40.mp3"
+        sound : "Simulation JFT-1/40.mp3"
     },
     {
         id : 41,
