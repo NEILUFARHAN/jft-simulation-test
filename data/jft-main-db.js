@@ -23,5 +23,11 @@ const tests = [
         name:"Simulation JFT-1",
         level:"A2",
         questions:SimulationJFT1Questions
+    },
+    {
+        id:1,
+        name:"Simulation JFT-2",
+        level:"A2",
+        questions:SimulationJFT2Questions
     }
 ];
