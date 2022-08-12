@@ -16,7 +16,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"学校"},
                     {id:3,text:"プール"},
                     ],
-        keyid : 3,
+        keyid : 2,
         image : "Simulation JFT-2/1.png",
         sound : ""
     },
@@ -44,7 +44,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"おす"},
                     {id:3,text:"のぼす"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "Simulation JFT-2/3.png",
         sound : ""
     },
@@ -69,10 +69,10 @@ const SimulationJFT2Questions = [
         answers : [
                     {id:0,text:"とけい"},
                     {id:1,text:"しぜん"},
-                    {id:2,text:"こうこう"},
+                    {id:2,text:"こうつう"},
                     {id:3,text:"しずか"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -86,7 +86,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"昨年"},
                     {id:3,text:"去年"},
                     ],
-        keyid : 3,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -100,7 +100,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"だいじでした"},
                     {id:3,text:"たいせつでした"},
                     ],
-        keyid : 2,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -114,7 +114,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"詳しい"},
                     {id:3,text:"簡単"},
                     ],
-        keyid : 2,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -128,7 +128,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"きんえん"},
                     {id:3,text:"きつえん"},
                     ],
-        keyid : 0,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -156,7 +156,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"かります"},
                     {id:3,text:"とります"},
                     ],
-        keyid : 2,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -166,11 +166,11 @@ const SimulationJFT2Questions = [
         text : "部屋の電気を消すのを忘れないでください。。</br>消す=...  ",
         answers : [
                     {id:0,text:"のぼす"},
-                    {id:1,text:"けす"},
+                    {id:1,text:"だす"},
                     {id:2,text:"はなす"},
-                    {id:3,text:"だす"},
+                    {id:3,text:"けす"},
                     ],
-        keyid : 1,
+        keyid : 3,
         image : "",
         sound : ""
     }, 
@@ -180,9 +180,9 @@ const SimulationJFT2Questions = [
         text : "れんきゅうに、なにをするつもりですか。</br>れんきゅう=...  ",
         answers : [
                     {id:0,text:"休暇"},
-                    {id:1,text:"連休"},
+                    {id:1,text:"本日"},
                     {id:2,text:"休思"},
-                    {id:3,text:"本日"},
+                    {id:3,text:"連休"},
                     ],
         keyid : 3,
         image : "",
@@ -191,14 +191,14 @@ const SimulationJFT2Questions = [
     {
         id : 14,
         section : 1,
-        text : "なべにしおを入れてください。</br>しお=...   ",
+        text : "しおを入れてください。</br>しお=...   ",
         answers : [
                     {id:0,text:"海"},
                     {id:1,text:"温度"},
                     {id:2,text:"塩"},
                     {id:3,text:"皿"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -231,7 +231,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"はたらこう"},
                     {id:3,text:"ざんぎょうしよう"},
                     ],
-        keyid : 1,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -250,7 +250,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"むりな"},
                     {id:3,text:"むりで"},
                     ],
-        keyid : 2,
+        keyid : 0,
         image : "",
         sound : ""
     },
