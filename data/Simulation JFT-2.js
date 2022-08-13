@@ -258,7 +258,7 @@ const SimulationJFT2Questions = [
         id : 18,
         section : 2,
         text : `
-        大家さんは体が___ので、よく風邪をひきます。
+        大家さんは体が_______ので、よく風邪をひきます。
         <hr>
         ＿＿＿に入るものは何ですか。
 
@@ -269,7 +269,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"げんきな"},
                     {id:3,text:"じょうぶな"},
                     ],
-        keyid : 3,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -289,7 +289,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"おわりました"},
                     {id:3,text:"できます"},
                     ],
-        keyid : 3,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -305,7 +305,7 @@ const SimulationJFT2Questions = [
         `,
         answers : [
                     {id:0,text:"来なくて"},
-                    {id:1,text:"来なかったら"},
+                    {id:1,text:"来なかったので"},
                     {id:2,text:"来ないと"},
                     {id:3,text:"来ます"},
                     ],
@@ -324,11 +324,11 @@ const SimulationJFT2Questions = [
         ＿＿＿に入るものは何ですか。`,
         answers : [
                     {id:0,text:"忙しい"},
-                    {id:1,text:"忙しくても"},
-                    {id:2,text:"忙しければ"},
+                    {id:1,text:"忙しでも"},
+                    {id:2,text:"忙しくても"},
                     {id:3,text:"忙しいと"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -341,8 +341,8 @@ const SimulationJFT2Questions = [
         <hr>
         ＿＿＿に入るものは何ですか。`,
         answers : [
-                    {id:0,text:"いらっしゃいませ"},
-                    {id:1,text:"おめでとうございます"},
+                    {id:0,text:"おめでとうございます"},
+                    {id:1,text:"いらっしゃいませ"},
                     {id:2,text:"がんばってください"},
                     {id:3,text:"かんぱい"},
                     ],
@@ -363,7 +363,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"かえしてください"},
                     {id:3,text:"かえさないでください"},
                     ],
-        keyid : 1,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -381,7 +381,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"を"},
                     {id:3,text:"で"},
                     ],
-        keyid : 1,
+        keyid : 3,
         image : "",
         sound : ""
     },
@@ -394,12 +394,12 @@ const SimulationJFT2Questions = [
         ＿＿＿に入るものは何ですか。
         `,
         answers : [
-                    {id:0,text:"に"},
+                    {id:0,text:"を"},
                     {id:1,text:"が"},
-                    {id:2,text:"を"},
+                    {id:2,text:"に"},
                     {id:3,text:"で"},
                     ],
-        keyid : 0,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -411,9 +411,9 @@ const SimulationJFT2Questions = [
                     {id:0,text:"に"},
                     {id:1,text:"が"},
                     {id:2,text:"を"},
-                    {id:3,text:""},
+                    {id:3,text:"で"},
                     ],
-        keyid : 0,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -427,7 +427,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"大きく"},
                     {id:3,text:"大きくて"},
                     ],
-        keyid : 0,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -528,7 +528,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"3"},
                     {id:3,text:"4"},
                     ],
-        keyid : 3,
+        keyid : 2,
         image : "Simulation JFT-2/31.png",
         sound : "Simulation JFT-2/31.mp3"
     },
@@ -549,15 +549,15 @@ const SimulationJFT2Questions = [
     {
         id : 33,
         section : 3,
-        text : "何時にエベントが始まりますか。   ",
+        text : "男の人はどうして休みたいですか ",
         answers : [
-                    {id:0,text:"17時"},
-                    {id:1,text:"18時"},
-                    {id:2,text:"13時"},
-                    {id:3,text:"19時"},
+                    {id:0,text:"1"},
+                    {id:1,text:"2"},
+                    {id:2,text:"3"},
+                    {id:3,text:"4"},
                     ],
-        keyid : 0,
-        image : "",
+        keyid : 2,
+        image : "Simulation JFT-2/32.png",
         sound : "Simulation JFT-2/33.mp3"
     },
     {
@@ -570,14 +570,14 @@ const SimulationJFT2Questions = [
                     {id:2,text:"04:00"},
                     {id:3,text:"04:30"},
                     ],
-        keyid : 0,
-        image : "Simulation JFT-2/34.png",
+        keyid : 3,
+        image : "",
         sound : "Simulation JFT-2/34.mp3"
     },
     {
         id : 35,
         section : 3,
-        text : "女の人はこれからどこへ行きますか ",
+        text : "二人はいつ映画館へ行きますか。",
         answers : [
                     {id:0,text:"1"},
                     {id:1,text:"2"},
@@ -591,7 +591,7 @@ const SimulationJFT2Questions = [
     {
         id : 36,
         section : 3,
-        text : "男の人は今日、なんで駅前へ行きますか。 ",
+        text : "男の人は今日、なにで駅前へ行きますか。 ",
         answers : [
                     {id:0,text:"1"},
                     {id:1,text:"2"},
@@ -599,7 +599,7 @@ const SimulationJFT2Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 0,
-        image : "",
+        image : "Simulation JFT-2/36.png",
         sound : "Simulation JFT-2/36.mp3"
     },
     {
@@ -612,7 +612,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"午前8時15分"},
                     {id:3,text:"午後8時15分"},
                     ],
-        keyid : 3,
+        keyid : 0,
         image : "",
         sound : "Simulation JFT-2/37.mp3"
     },
@@ -626,7 +626,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"3"},
                     {id:3,text:"4"},
                     ],
-        keyid : 2,
+        keyid : 0,
         image : "",
         sound : "Simulation JFT-2/38.mp3"
     },
@@ -638,9 +638,9 @@ const SimulationJFT2Questions = [
                     {id:0,text:"1回５００円"},
                     {id:1,text:"1回７００円"},
                     {id:2,text:"1回８００円"},
-                    {id:3,text:"1回１０００円(よ)む"},
+                    {id:3,text:"1回１０００円"},
                     ],
-        keyid : 0,
+        keyid : 2,
         image : "",
         sound : "Simulation JFT-2/39.mp3"
     },
@@ -654,7 +654,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"7年間"},
                     {id:3,text:"5年間"},
                     ],
-        keyid : 3,
+        keyid : 0,
         image : "",
         sound : "Simulation JFT-2/40.mp3"
     },
@@ -675,7 +675,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"学校に行かないで、公園を散歩しました"},
                     {id:3,text:"学校からいつもの道で公園に行きました"},
                     ],
-        keyid : 3,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -685,8 +685,8 @@ const SimulationJFT2Questions = [
         text :  `
         ルームメートの三ンへさんからのメモです。</br>
         アル さん、</br>
-        さきに学校に行き ます。教室で会い ましょう。
-        電気を消して出かけてください。先生に借りた本を忘れないでくださいね!</br>
+        さきに学校に行き ます。教室で会いましょう。
+        家を出る前に、電気を消すのを忘れないでください。先生に借りた本も忘れないでくださいね!</br>
         <hr>
         アルさんはでかける前に何をしますか。
         `,
@@ -696,7 +696,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"電気を消します"},
                     {id:3,text:"先生に借りた本を読みます"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -722,7 +722,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"くろくて、小さくて、しずかないぬ"},
                     {id:3,text:"しろくて、小さくて、うるさいいぬ"},
                     ],
-        keyid : 3,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -736,7 +736,7 @@ const SimulationJFT2Questions = [
         大きい ですが、その時はまだ目が開いていなくて、「クーン、クーン｣と泣いていました。
         私はすぐにあたたかい 部屋に入れ ました。はじめは、元気がありませんでしたが、
         1週間ぐらいで とても 元気になり ました。</br>
-        小さい時はよく 泣き ましたが、今は泣き ません。でも、走るのがはやくて、
+        小さい時はよく 泣き ましたが、今は泣き ません。ノアは走るのがはやくて、
         さんぽのときは大変です。</br>
         
         <hr>
@@ -748,7 +748,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"目が開いていませんでした"},
                     {id:3,text:"さんぽがとてもすきでした"},
                     ],
-        keyid : 2,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -768,7 +768,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"フランス語を勉強するため"},
                     {id:3,text:"フランスの映画を勉強するため"},
                     ],
-        keyid : 3,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -789,7 +789,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"紹介文をネットからまとめます。"},
                     {id:3,text:"本のことを知りたい人と相談します。"},
                     ],
-        keyid : 3,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -816,7 +816,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"英語が上手ではない人"},
                     {id:3,text:"学校では勉強したくない人"},
                     ],
-        keyid : 0,
+        keyid : 1,
         image : "",
         sound : ""
     },
@@ -843,7 +843,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"会のみんなが英語をおしえるから"},
                     {id:3,text:"会ではいちばん英語が下手から"},
                     ],
-        keyid : 2,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -860,12 +860,12 @@ const SimulationJFT2Questions = [
         3月1日に、カンさんと山田さんはどうしますか。
         `,
         answers : [
-                    {id:0,text:"しずかさん"},
-                    {id:1,text:"ゆりこさん"},
-                    {id:2,text:"なおみさん"},
-                    {id:3,text:"ひろみさん"},
+                    {id:0,text:"旅行します"},
+                    {id:1,text:"朝ごはん一緒にいきます"},
+                    {id:2,text:"喫茶店で旅行のことを相談します"},
+                    {id:3,text:"昼ごはんについて相談します"},
                     ],
-        keyid : 1,
+        keyid : 2,
         image : "",
         sound : ""
     },
@@ -888,7 +888,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"電気とエアコンを消してから、帰ります"},
                     {id:3,text:"クラスのみんなと、いっしょにそうじをします"},
                     ],
-        keyid : 3,
+        keyid : 2,
         image : "",
         sound : ""
     }
