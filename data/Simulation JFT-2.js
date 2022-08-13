@@ -557,7 +557,7 @@ const SimulationJFT2Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 2,
-        image : "Simulation JFT-2/32.png",
+        image : "Simulation JFT-2/33.png",
         sound : "Simulation JFT-2/33.mp3"
     },
     {
@@ -627,7 +627,7 @@ const SimulationJFT2Questions = [
                     {id:3,text:"4"},
                     ],
         keyid : 0,
-        image : "",
+        image : "Simulation JFT-2/38.png",
         sound : "Simulation JFT-2/38.mp3"
     },
     {
