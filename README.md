@@ -87,6 +87,7 @@ fachribandang2@gmail.com
 
 <!-- LICENSE -->
 ## License
+Lihat [open issue](https://github.com/fachribandang/jft-simulation-test/blob/732d15d3334ede81fae2952a377ad941e00d99d7/LICENSE) 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
