@@ -12,7 +12,7 @@ https://fachribandang.github.io/jft-simulation-test/
 <br />
 <div align="center">
   <a href="#">
-    <img src="#" alt="Logo" width="150" height="80">
+    <img src="https://github.com/fachribandang/jft-simulation-test/blob/fe15b1a873d0cb9adcf5a51d497ee935e986a4ec/assets/images/header-img.JPG" alt="Logo" width="150" height="80">
   </a>
 
   <h1 align="center">JFT Simulation Test</h1>
@@ -67,8 +67,6 @@ i hope this can help people who will take JFT-basic
 
 ### Built With
 
-Teknologi yang kami gunakan untuk menyelesaikan Mini Project ini adalah:
-
 - [Vanilla.js](https://www.javascript.com/)
 - [HTML](https://www.w3schools.com/html/)
 - [bootstrap](https://getbootstrap.com/)
@@ -100,7 +98,7 @@ https://fachribandang.github.io/jft-simulation-test/
 Here are some screenshots of the jft simualation 
 
 ### How to use ###
-![picture alt](# "How to do")
+![picture alt](https://github.com/fachribandang/jft-simulation-test/blob/fe15b1a873d0cb9adcf5a51d497ee935e986a4ec/assets/images/howtouse.png "How to do")
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -110,7 +108,7 @@ Here are some screenshots of the jft simualation
 - [x] Add Changelog
 - [x] Add back to top links
 
-Lihat [buka isu](https://github.com/fachribandang/jft-simulation-test/issues) 
+Lihat [open issue](https://github.com/fachribandang/jft-simulation-test/issues) 
 Display a list of the latest features and issues.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -121,7 +119,6 @@ fachribandang2@gmail.com
 
 <!-- LICENSE -->
 ## License
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
