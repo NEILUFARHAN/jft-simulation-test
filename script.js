@@ -388,6 +388,16 @@
         testQANavigationContainer.appendChild(testQANavigation);
         return testQANavigationContainer;
     }
+    const shuffle = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = array[i];
+            // Swap
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    };
     const createTestQA = (question) => {
         // create container
         // 50 soal
@@ -442,6 +452,7 @@
         const testQA = document.createElement("div");
         testQA.classList.add("col-sm-10")
         testQA.id=`tqa-s${question.section}q${question.id}`;
+        console.log(shuffle(question.answers));
         testQA.innerHTML=`
         <div class="row bg-light bg-gradient border shadow-sm  text-start p-2 mb-2">
             ${soundElement}
@@ -450,13 +461,21 @@
             <hr>
             ${imageElement}
         </div>
+        
         <div class="row bg-light bg-gradient shadow-sm list-group rounded-0 mb-2">
-          <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="1" onclick="setUserAnswer(this)">${question.answers[0].text}</button>
-          <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="2" onclick="setUserAnswer(this)">${question.answers[1].text}</button>
-          <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="3" onclick="setUserAnswer(this)">${question.answers[2].text}</button>
-          <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="4" onclick="setUserAnswer(this)">${question.answers[3].text}</button>
+        <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${1}" onclick="setUserAnswer(this)">${question.answers[0].text}</button>
+        <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${2}" onclick="setUserAnswer(this)">${question.answers[1].text}</button>
+        <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${3}" onclick="setUserAnswer(this)">${question.answers[2].text}</button>
+        <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${4}" onclick="setUserAnswer(this)">${question.answers[3].text}</button>
         </div>
         `;
+        // for (var i = 0; i <4 ; i++){
+        //     testQA.innerHTML+=`<button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${i+1}" onclick="setUserAnswer(this)">${question.answers[i].text}</button>`;
+        //     if(i==3){
+        //         testQA.innerHTML+="</div>";
+        //     }
+        // }
+
         // <div class="row p-5">
         // <div class="col-6 text-start">
         //   <button id="nav-btn" class="btn btn-success" ${navPrevAct} ${buttonDisplayPrev}><i class="fa-solid fa-chevron-left"></i></button>
@@ -472,7 +491,7 @@
         const TestFooter = document.createElement("div");
         TestFooter.className="row bg-dark text-white bg-gradient shadow-sm rounded mb-2 py-1";
         TestFooter.innerHTML = `
-        <div class="row" id="test-footer">
+        <div class="row mx-auto" id="test-footer">
             <div class="col-6 text-start">
                 <button id="nav-btn" class="btn btn-success" navPrevAct buttonDisplayPrev ><i class="fa-solid fa-chevron-left"></i></button>
             </div>
@@ -504,7 +523,7 @@
             }
         }
         document.getElementById("test-footer").innerHTML = `
-        <div class="row" id="test-footer">
+        <div class="row mx-auto" id="test-footer">
             <div class="col-6 text-start">
                 <button id="nav-btn" class="btn btn-success" ${navPrevAct} ${buttonDisplayPrev} ><i class="fa-solid fa-chevron-left"></i></button>
             </div>
