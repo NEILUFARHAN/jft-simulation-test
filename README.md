@@ -4,11 +4,6 @@ Simulation for The Japan Foundation Test for Basic Japanese (JFT-Basic)  Level A
 https://fachribandang.github.io/jft-simulation-test/
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![filesize][filesize-shield]][filesize-url]
-[![releasedate][lastcommit-shield]][lastcommit-url]
-
 <br />
 <div align="center">
   <a href="#">
