@@ -12,7 +12,7 @@ https://fachribandang.github.io/jft-simulation-test/
 <br />
 <div align="center">
   <a href="#">
-    <img src="https://github.com/fachribandang/jft-simulation-test/blob/fe15b1a873d0cb9adcf5a51d497ee935e986a4ec/assets/images/header-img.JPG" alt="Logo" width="150" height="80">
+    <img src="https://github.com/fachribandang/jft-simulation-test/blob/fe15b1a873d0cb9adcf5a51d497ee935e986a4ec/assets/images/header-img.JPG" alt="Logo">
   </a>
 
   <h1 align="center">JFT Simulation Test</h1>
