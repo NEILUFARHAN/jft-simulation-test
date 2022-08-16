@@ -269,7 +269,7 @@ const SimulationJFT2Questions = [
                     {id:2,text:"げんきな"},
                     {id:3,text:"じょうぶな"},
                     ],
-        keyid : 1,
+        keyid : 0,
         image : "",
         sound : ""
     },
