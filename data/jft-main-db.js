@@ -19,7 +19,7 @@ const sections = [
 
 const tests = [
     {
-        id:1,
+        id:0,
         name:"Simulation JFT-1",
         level:"A2",
         questions:SimulationJFT1Questions
@@ -29,5 +29,11 @@ const tests = [
         name:"Simulation JFT-2",
         level:"A2",
         questions:SimulationJFT2Questions
+    },
+    {
+        id:2,
+        name:"Simulation JFT-3",
+        level:"A2",
+        questions:SimulationJFT3Questions
     }
 ];
