@@ -210,7 +210,7 @@
         selectedTest.questions.forEach(question => {
         let soundElement='';
         let imageElement='';
-        if(question.sound!= ""){
+        if(question.sound != ""){
             soundElement=`
             <div class="text-center">
             <audio preload="none" controls onplaying="disabledAudio(this)" onended="enabledAudio(this)"  id="2" > 
@@ -241,6 +241,13 @@
                     ${imageElement}
                 </div>
                 </br>
+                
+                <div class="row bg-light bg-gradient shadow-sm list-group rounded-0 mb-2">
+                <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${1}">${question.answers[0].text}</button>
+                <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${2}">${question.answers[1].text}</button>
+                <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${3}">${question.answers[2].text}</button>
+                <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${4}">${question.answers[3].text}</button>
+                </div>
                 <button id="s${question.section}q${question.id}" 
                 type="button" class="list-group-item list-group-item-action bg-success bg-opacity-75 text-white rounded "  disabled>${question.answers[question.keyid].text}
                 </button>
