@@ -311,7 +311,7 @@ const SimulationJFT3Questions = [
                     {id:2,text:"たいくて"},
                     {id:3,text:"て"},
                     ],
-        keyid : 1,
+        keyid : 0,
         image : "",
         sound : ""
     },
@@ -566,10 +566,10 @@ const SimulationJFT3Questions = [
         answers : [
                     {id:0,text:"フオン　さん"},
                     {id:1,text:"いしかわ　さん"},
-                    {id:2,text:"べこ　さん"},
+                    {id:2,text:"えこ　さん"},
                     {id:3,text:"女のひと"},
                     ],
-        keyid : 2,
+        keyid : 1,
         image : "",
         sound : "Simulation JFT-3/34.mp3"
     },
