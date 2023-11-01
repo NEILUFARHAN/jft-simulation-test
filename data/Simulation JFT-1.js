@@ -121,7 +121,7 @@ const SimulationJFT1Questions = [
     {
         id : 9,
         section : 1,
-        text : "曇りますね、雨がふりそうです。</br>曇=.... ",
+        text : "雲たくさんみえますね、雨がふりそうです。</br>雲=.... ",
         answers : [
                     {id:0,text:"くも"},
                     {id:1,text:"けむり"},
