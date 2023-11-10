@@ -36,12 +36,12 @@ const tests = [
         level:"A2",
         questions:SimulationJFT3Questions
     },
-    // {
-    //     id:3,
-    //     name:"Simulation JFT-4",
-    //     level:"A2",
-    //     questions:SimulationJFT4Questions
-    // },
+    {
+        id:3,
+        name:"Simulation JFT-4",
+        level:"A2",
+        questions:SimulationJFT4Questions
+    },
     {
         id:4,
         name:"Simulation JFT-5",
