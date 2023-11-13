@@ -617,35 +617,35 @@
           <hr>
 
           <div class="row">
-            <div class="col my-1 mx-auto text-center">
-                (passing grade 200 Points) </br>
-                Total : <span> ${Number(getTotalScore().toFixed(0))} </span> Points
+            <div class="col my-1 mx-auto text-center fw-bold">
+                (Passing grade 200 Points) </br>
+                Total : <span class="fw-bolder fs-1"> ${Number(getTotalScore().toFixed(0))} </span> Points
             </div>
           </div>
           <hr>
 
           <div class="row">
-            <div class="col-lg-3 my-2">
+            <div class="col-lg-3 my-2 border-start">
                 <p> Section ${sections[0].id} - ${sections[0].name}:</p>
                 <span class="ms-5"> ${sectionResults[0]} Points</span>
             </div>
-            <div class="col-lg-3 my-2">
+            <div class="col-lg-3 my-2 border-start">
                 <p> Section ${sections[1].id} - ${sections[1].name}:</p>
                 <span class="ms-5"> ${sectionResults[1]} Points</span>
             </div>
-            <div class="col-lg-3 my-2">
+            <div class="col-lg-3 my-2 border-start">
                 <p> Section ${sections[2].id} - ${sections[2].name}:</p>
                 <span class="ms-5"> ${sectionResults[2]} Points</span>
             </div>
-            <div class="col-lg-3 my-2">
+            <div class="col-lg-3 my-2 border-start border-end">
                 <p> Section ${sections[3].id} - ${sections[3].name}:</p>
                 <span class="ms-5"> ${sectionResults[3]} Points</span>
             </div>
           </div>
           <hr>
           <div class="row mx-auto text-center no-print">
-            <button class=" col-3 btn btn-primary mx-4 my-2" onclick="window.print()"> print <i class="fa-solid fa-print ms-2"></i> </button>
-            <button class=" col-6 btn btn-primary mx-4 my-2" onclick="resetApp()"> exit  
+            <button class=" col btn btn-primary mx-4 my-2" onclick="window.print()"> print <i class="fa-solid fa-print ms-2"></i> </button>
+            <button class=" col btn btn-primary mx-4 my-2" onclick="resetApp()"> exit  
             <i class="fa-solid fa-arrow-right-from-bracket ms-2"></i></button>
           </div>
 
