@@ -9,7 +9,8 @@
     let confirmationAnswer;
 
     const initApp = () => {
-        showTestList ();
+        // showTestList ();
+        showLoginForm ();
     }
     const resetApp = () => {
         if(confirm("Are you sure you want to exit ?")){
@@ -658,6 +659,56 @@
         main.appendChild(createResult());
     }
 // result
+
+// login control
+
+const createLoginForm = () => {
+    const loginContainer = document.createElement('div');
+    loginContainer.innerHTML = `
+    <h1>Login</h1>
+    <div class="mx-auto p-3 m-2 shadow-sm border rounded" >
+        <div class="form-floating my-2">
+            <input type="username" id="username" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">username</label>
+          </div>
+          <div class="form-floating my-2">
+            <input type="password" id="password" class="form-control" id="floatingPassword" placeholder="">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="mx-auto text-center  my-2">
+            <button type="button"  
+            onclick="authenthication()" 
+            class="btn btn-outline-primary">Submit</button>
+          </div>
+    </div>
+    `;
+    return loginContainer;
+}
+console.log(users)
+const showLoginForm = () => {
+    clearMain();
+    main.appendChild(createLoginForm());
+}
+const authenthication = () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    // console.log(users[day]);
+    const obj =(users[day].username == username) && (users[day].password == password) ? users[day] : false;
+    // const obj = users.find(user => (user.username == username) && (user.password == password));
+    // console.log(obj);
+    if(!obj) {
+        // username="";
+        // password="";
+        alert("username or password is wrong");
+        clearMain();
+        main.appendChild(createLoginForm());
+    }  else{
+        showTestList();
+    }
+
+}
 
 // global
     initApp();
